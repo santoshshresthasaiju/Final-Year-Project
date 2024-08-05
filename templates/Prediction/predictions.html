@@ -1,0 +1,65 @@
+<!-- {% extends "Prediction/base.html" %} -->
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .table{
+        border-collapse: collapse;
+        width: 100%;
+        background-color:lavender;
+    }
+    
+    .table th, .table td {
+        border: 1px solid #0e0606;
+        padding: 8px;
+        text-align: left;
+    }
+    
+    .table th {
+        background-color: #5bb2d4 !important;
+    }
+    </style>
+</head>
+
+<body>
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Pregnancy</th>
+            <th scope="col">Glucose</th>
+            <th scope="col">Blood Pressure</th>
+            <th scope="col">Skin Thickness</th>
+            <th scope="col">Insulin</th>
+            <th scope="col">BMI</th>
+            <th scope="col">Diabetes Pedigree</th>
+            <th scope="col">Age</th>
+            <th scope="col">Result</th>
+            <th scope="col">Probability</th>
+          </tr>
+        </thead>
+        <tbody>
+        {% for instance in object_list %}
+          <tr>
+            <td>{{ instance.name }}</td>
+            <td>{{ instance.pregnancy }}</td>
+            <td>{{ instance.glucose }}</td>
+            <td>{{ instance.bloodPressure }}</td>
+            <td>{{ instance.skinThickness }}</td>
+            <td>{{ instance.insulin }}</td>
+            <td>{{ instance.bmi }}</td>
+            <td>{{ instance.diabetesPedigree }}</td>
+            <td>{{ instance.age }}</td>
+            <td>{{ instance.result}}</td>
+            <td>{{ instance.probability }}</td>
+          </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+</body>
+</html>
+{% endblock content %}

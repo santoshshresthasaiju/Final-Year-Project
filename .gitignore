@@ -1,0 +1,16 @@
+projectevn
+__pycache__
+# Ignore Python bytecode files
+*.pyc
+__pycache__/
+
+# Ignore environment files
+.env
+.venv/
+
+# Ignore Django static files
+staticfiles/
+
+# Ignore build and temporary files
+build/
+temp/

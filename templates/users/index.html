@@ -1,0 +1,155 @@
+{% include "Header.html" %}
+
+<style>
+  .btn-group {
+    color: crimson;
+    margin: 1%;
+  }
+  .infor {
+    text-align: center;
+    display: flex;
+    text-align: center;
+  }
+  .about2 {
+    /* position: absolute;
+        top: 161px;
+        left: 87px; */
+    color: #226a80;
+    width: 42%;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 1px;
+    line-height: 60px;
+    /* margin-bottom: 30px; */
+
+    @media (max-width: 1075px) {
+      font-size: 3px;
+    }
+  }
+</style>
+<div>
+  <div class="container">
+    <div class="content">
+      <h2 class="btn-group">Go here to Predict Diabetes 👇👇👇👇👇</h2>
+      <div class="infor">
+        <a class="nav-link" href="{% url 'index'%}">Predict Now</a>
+      </div>
+      <br />
+      <br />
+      <div class="about2">
+        <h3>Diabetes Facts</h3>
+      </div>
+      <div class="accordion accordion-flush" id="accordionExample">
+        <div class="accordion-item bg-transparent">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed bg-transparent"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              <strong>What is Diabetes? </strong>
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <strong
+                >Diabetes is a chronic (long-lasting) health condition that
+                affects how your body turns food into energy.</strong
+              >Your body breaks down most of the food you eat into sugar
+              (glucose) and releases it into your bloodstream. When your blood
+              sugar goes up, it signals your pancreas to release insulin.
+              Insulin acts like a key to let the blood sugar into your body’s
+              cells for use as energy.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item bg-transparent">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed bg-transparent"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              <strong>Diabetes Symptoms</strong>
+            </button>
+          </h2>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <strong
+                >If you have any of the following diabetes symptoms,see your
+                doctor about getting your blood sugar tested:</strong
+              >
+              <br />
+              <i class="fa-solid fa-circle fa-2xs"></i> Urinate (pee) a lot
+              <br />
+              <i class="fa-solid fa-circle fa-2xs"></i> Are very thirsty <br />
+              <i class="fa-solid fa-circle fa-2xs"></i> Lose weight without
+              trying <br />
+              <i class="fa-solid fa-circle fa-2xs"></i> Are very hungry <br />
+              <i class="fa-solid fa-circle fa-2xs"></i> Have blurry vision
+              <br />
+              <i class="fa-solid fa-circle fa-2xs"></i> Have numb or tingling
+              hands or feet <br />
+              <i class="fa-solid fa-circle fa-2xs"></i> Feel very tired,Have
+              very dry skin <br />
+              <i class="fa-solid fa-circle fa-2xs"></i> Have sores that heal
+              slowly <br />
+              <i class="fa-solid fa-circle fa-2xs"></i> Have more infections
+              than usual.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item bg-transparent">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed bg-transparent"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              <strong>Diabetes Tests</strong>
+            </button>
+          </h2>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <strong
+                >Your doctor will have you take one or more of the following
+                blood tests to confirm the diagnosis:</strong
+              >
+              <br />
+              <i class="fa-solid fa-circle fa-2xs"></i> A1C Test <br />
+              <i class="fa-solid fa-circle fa-2xs"></i> Fasting Blood Sugar Test
+              <br />
+              <i class="fa-solid fa-circle fa-2xs"></i> No Fasting Blood Sugar
+              Test <br />
+              <i class="fa-solid fa-circle fa-2xs"></i> Glucose Tolerance Test
+              <br />
+              <i class="fa-solid fa-circle fa-2xs"></i> Random Blood Sugar Test
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% include "Footer.html" %}

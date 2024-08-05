@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+html{
+  height: 100%;
+  font-family: sans-serif;
+}
+.main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+form{
+  border-radius: 5%;
+  padding: 2rem;
+  font-weight: 700;
+  box-shadow: 0 0 10px rgb(0,0, 0, 0.3);
+  border: none;
+  padding: 1em;
+}
+form input,
+form select,
+form textarea {
+  width:100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  box-shadow: 0 0 10px, rgba(194, 166, 166, 0.3);
+  border: none;
+  padding: 1em;
+
+}
+form button {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  background-color: #708b91;
+  border: none;
+  color: rgb(105, 105, 232);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color o.3s;
+
+
+}
+.login {
+  background: #a6959500;
+  border: 1px solid #fefefe00;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 6px 20px 25px #6193c0a1, rgb(0, 0, 0,0.3);
+  margin:200px;
+  padding:100px;
+  
+  
+    
+    
+}
+
+form button:hover{
+  background-color: rgb(85, 85, 248);
+}
+form .errorlist li{
+  list-style-type: none;
+  color: rgb(216,6,114);
+}
+
+@media screen and (max-width: 600px){
+  form{
+    width:90%;
+  }
+}
+
